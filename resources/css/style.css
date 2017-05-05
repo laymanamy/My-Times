@@ -19,7 +19,6 @@ header {
 
 header nav {
   display: inline-block;
-  justify-content: flex-end;
 }
 
 header h4 {
@@ -40,6 +39,7 @@ header a {
 }
 
 .large {
+  display: inline-flex;
   width: 630px;
   margin-right: 20px;
   flex-direction: column;
@@ -59,7 +59,6 @@ header a {
 }
 
 .mother {
-  display: flex;
   font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
@@ -68,7 +67,6 @@ header a {
 }
 
 .earth {
-  display: inline-block;
   flex-direction: row;
   font-family: Georgia;
   font-weight: bold;
@@ -80,7 +78,6 @@ header a {
 }
 
 .research {
-  display: inline-block;
   flex-direction: row;
   font-family: Georgia;
   font-weight: bold;
@@ -91,16 +88,7 @@ header a {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
 }
 
-.orca {
-  display: inline-block;
-}
-
-.burger {
-  display: inline-block;
-}
-
 .cats {
-  display: flex;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
@@ -135,9 +123,8 @@ footer {
   display: flex;
   position: relative;
   z-index: 5;
-  top: 75px;
-  align-content: center;
-  justify-content: center;
+  top: 125px;
+  text-align: center;
   flex-direction: column;
   background-color: MediumAquamarine;
   margin: auto;
@@ -147,8 +134,7 @@ footer {
   width: 100%;
 }
 
-footer .title {
-  display: inline-block;
+.top-line p {
   padding-right: 25px;
   border-right: 2px solid white;
   font-family: Georgia;
@@ -157,10 +143,33 @@ footer .title {
   color: white;
 }
 
+.top-line {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 footer nav span {
   display: inline-block;
+  padding-left: 20px;
 }
 
 footer a {
   color: black;
+}
+
+
+
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-stories {
+  display: flex;
+  justify-content: space-between;
+}
+
+h5 {
+  text-align: center;
 }
