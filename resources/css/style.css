@@ -7,12 +7,14 @@ header {
   padding-bottom: 5px;
   border-bottom: 1px solid black;
   align-items: center;
-
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
 }
 
 .logo {
   padding-left: 30px;
-  border: 1px solid black;
 }
 
 header nav {
@@ -30,6 +32,9 @@ header a {
 }
 
 .main-content {
+  position: relative;
+  z-index: 5;
+  top: 75px;
   display: flex;
   margin-top: 20px;
 }
@@ -63,21 +68,35 @@ header a {
 }
 
 .earth {
+  display: inline-block;
   flex-direction: row;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
+  height: 275px;
+  width: 275px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
 }
 
 .research {
+  display: inline-block;
   flex-direction: row;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
+  height: 275px;
+  width: 275px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+}
+
+.orca {
+  display: inline-block;
+}
+
+.burger {
+  display: inline-block;
 }
 
 .cats {
@@ -86,6 +105,7 @@ header a {
   font-weight: bold;
   font-size: 30px;
   color: white;
+  height: 300px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png")
 }
 
@@ -109,4 +129,38 @@ header a {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+}
+
+footer {
+  display: flex;
+  position: relative;
+  z-index: 5;
+  top: 75px;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 300px;
+  width: 100%;
+}
+
+footer .title {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer nav span {
+  display: inline-block;
+}
+
+footer a {
+  color: black;
 }
