@@ -36,17 +36,21 @@ header a {
 .large {
   display: flex;
   width: 630px;
-  border: 1px solid black;
+  flex-direction: column;
+
 }
 
 .medium {
   display: flex;
   width: 300px;
-  border: 1px solid black;
 }
 
 .small {
   display: flex;
   width: 240px;
+  flex-direction: column;
+}
+
+div {
   border: 1px solid black;
 }
