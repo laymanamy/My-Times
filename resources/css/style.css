@@ -36,8 +36,8 @@ header a {
 
 .large {
   width: 630px;
-  flex-direction: column;
   margin-right: 20px;
+  flex-direction: column;
 }
 
 .medium {
@@ -63,7 +63,7 @@ header a {
 }
 
 .earth {
-  display: flex;
+  flex-direction: row;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
@@ -72,7 +72,7 @@ header a {
 }
 
 .research {
-  display: flex;
+  flex-direction: row;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
@@ -94,6 +94,19 @@ header a {
   font-size: 17px;
   color: black;
 }
-div {
-  border: 1px solid black;
+
+.news-bites p {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 15px;
+  border-bottom: 1px solid black;
+  margin: 0px
+}
+
+.news-bites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
