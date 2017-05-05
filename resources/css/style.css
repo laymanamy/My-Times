@@ -7,11 +7,14 @@ header {
   padding-bottom: 5px;
   border-bottom: 1px solid black;
   align-items: center;
+
 }
 
 .logo {
   padding-left: 30px;
+  border: 1px solid black;
 }
+
 header nav {
   display: inline-block;
   justify-content: flex-end;
@@ -24,4 +27,20 @@ header h4 {
 header a {
   color: black;
   margin: 15px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.large {
+  display: flex;
+  width: 630px;
+  border: 1px solid black;
+}
+
+.medium {
+  display: flex;
+  width: 300px;
+  border: 1px solid black;
 }
