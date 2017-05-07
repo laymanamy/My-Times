@@ -1,5 +1,11 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
 header {
   display: flex;
+  justify-content: space-between;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -8,13 +14,16 @@ header {
   border-bottom: 1px solid black;
   align-items: center;
   position: fixed;
-  width: 100%;
   z-index: 10;
   background-color: white;
+  top: 0px;
+  right: 0px;
+  left: 0px;
 }
 
 .logo {
   padding-left: 30px;
+  display: flex;
 }
 
 header nav {
@@ -119,20 +128,6 @@ header a {
   text-align: center;
 }
 
-footer {
-  display: flex;
-  position: relative;
-  z-index: 5;
-  top: 125px;
-  text-align: center;
-  flex-direction: column;
-  background-color: MediumAquamarine;
-  margin: auto;
-  font-family: Verdana;
-  font-size: 12px;
-  height: 300px;
-  width: 100%;
-}
 
 .top-line p {
   padding-right: 25px;
@@ -149,27 +144,51 @@ footer {
   align-content: center;
 }
 
-footer nav span {
-  display: inline-block;
-  padding-left: 20px;
-}
-
-footer a {
-  color: black;
-}
-
-
-
-.images {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-stories {
+.flex-containter {
   display: flex;
   justify-content: space-between;
 }
 
 h5 {
   text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 325px;
+    background-color: MediumAquamarine;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 12px;
+    position: relative;
+    z-index: 5;
+    top: 75px;
+}
+
+footer .title {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+nav a {
+  color: black;
 }
